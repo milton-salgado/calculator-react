@@ -68,6 +68,7 @@ function Section() {
             (temp[index] == "x" || temp[index] == "÷" || temp[index] == "%")
         ) {
             let indexSecondLastSymbol = findLastSymbol(temp.slice(0, index));
+
             temp = temp
                 .slice(0, indexSecondLastSymbol + 1)
                 .concat(
@@ -80,6 +81,7 @@ function Section() {
                 .concat(Number(temp.slice(index + 1, temp.length)));
 
         temp = convertSymbols(temp);
+        console.log(temp);
         temp = eval(temp);
 
         if (
@@ -87,7 +89,8 @@ function Section() {
             temp.toString().toUpperCase() === "INFINITY" ||
             temp.toString().toUpperCase() === "UNDEFINED" ||
             temp.toString().toUpperCase() === "-INFINITY" ||
-            temp.toString().toUpperCase() === "-NAN"
+            temp.toString().toUpperCase() === "-NAN" ||
+            temp.toString().toUpperCase() === "-UNDEFINED"
         )
             temp = "ERRO";
 
@@ -130,14 +133,10 @@ function Section() {
     };
 
     const convertSymbols = (expression) => {
-        if (expression.includes("x")) expression = expression.replace("x", "*");
-        else if (expression.includes("*"))
-            expression = expression.replace("*", "x");
-
-        if (expression.includes("÷")) expression = expression.replace("÷", "/");
-        else if (expression.includes("/"))
-            expression = expression.replace("/", "÷");
-
+        if (expression.includes("x"))
+            expression = expression.replaceAll("x", "*");
+        if (expression.includes("÷"))
+            expression = expression.replaceAll("÷", "/");
         return expression;
     };
 
