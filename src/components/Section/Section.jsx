@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const SectionStyle = styled.section`
     width: 450px;
-    height: 620px;
+    height: 600px;
     background-color: black;
     display: flex;
     flex-direction: column;
