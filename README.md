@@ -1,6 +1,6 @@
 # 🧮 Calculator React
 
-Uma calculadora de números de 0 a 10, feito com a biblioteca React JavaScript.
+Uma calculadora, feita com a biblioteca React JavaScript.
 
 ## 📚 Tabela de Conteúdos
 
