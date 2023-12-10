@@ -21,7 +21,7 @@ Uma calculadora de números de 0 a 10, feito com a biblioteca React JavaScript.
 
 ## 📋 Descrição
 
-Este é um projeto de um contador de números de 0 a 10.
+Este é um projeto de uma calculadora.
 Esse projeto foi lançado como o desafio 03 do módulo 02 do curso de front-end do "Vai na Web". Sua principal proposta era colocar os conhecimento de lógica de programação com a linguagem JavaScript e a biblioteca React JavaScript em prática, utilizando todos os recursos aprendidos ao longo das aulas. O modelo a ser seguido foi apresentado em aula.
 
 ### 🚀 Funcionalidades
